@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.0-preview.3.24172.4" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.4" />
+      <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.2" />
+      <PackageReference Include="MySql.Data" Version="8.4.0" />
+      <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Update="HotelView\Class1.cs">
+        <Link>HotelModels\Class1.cs</Link>
+      </Compile>
+    </ItemGroup>
+
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="Hotel.BLL\obj\Hotel.BLL.csproj.nuget.dgspec.json" />
+      <_ContentIncludedByDefault Remove="Hotel.BLL\obj\project.assets.json" />
+      <_ContentIncludedByDefault Remove="Hotel.BLL\obj\project.packagespec.json" />
+      <_ContentIncludedByDefault Remove="HotelBookingApp.Domain\obj\HotelBookingApp.Domain.csproj.nuget.dgspec.json" />
+      <_ContentIncludedByDefault Remove="HotelBookingApp.Domain\obj\project.assets.json" />
+      <_ContentIncludedByDefault Remove="HotelBookingApp.Domain\obj\project.packagespec.json" />
+      <_ContentIncludedByDefault Remove="HotelBookingApp.Infrastructure\obj\HotelBookingApp.Infrastructure.csproj.nuget.dgspec.json" />
+      <_ContentIncludedByDefault Remove="HotelBookingApp.Infrastructure\obj\project.assets.json" />
+      <_ContentIncludedByDefault Remove="HotelBookingApp.Infrastructure\obj\project.packagespec.json" />
+    </ItemGroup>
+
+</Project>
